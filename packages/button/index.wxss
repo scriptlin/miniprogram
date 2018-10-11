@@ -1,0 +1,12 @@
+.buy-now {
+  display: inline-block;
+  color: #fff;
+  border-radius: 0;
+  font-size: 30rpx;
+  background: #e40011;
+  transition: all .3s;
+}
+
+.touch-buNow {
+  background: #b8000e;
+}

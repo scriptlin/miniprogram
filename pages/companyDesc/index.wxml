@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="desc-wrap">
+    <image wx:for="{{companyDesc}}" src="{{item}}" mode="widthFix" style="width: 100%;"></image>
+  </view>
+  <navigator
+    url="/pages/goodList/index?id={{id}}&name={{name}}"
+    bindtouchstart="buttonTouch"
+    hover-class='button-active'
+  >查看旗下全部项目</navigator>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "确认订单",
+  "usingComponents": {
+    "calendar": "/packages/calendar/index",
+    "contact-serve": "/packages/contactServe/index"
+  }
+}

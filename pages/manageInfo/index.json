@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "信息管理",
+  "usingComponents": {
+    "good-button": "/packages/button/index"
+  }
+}

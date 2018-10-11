@@ -1,0 +1,93 @@
+.container{
+  background: #f0efef;
+  font-family: PingFangSC-Regular, sans-serif;
+}
+.tip_header{
+  width: 100vw;
+  height: 200rpx;
+  background: -webkit-linear-gradient(top, #ff3333, #ff3333);
+}
+
+.state{
+  display: block;
+  width: 200rpx;
+  padding-left: 66rpx;
+  background: url(http://pak686x2f.bkt.clouddn.com/clocks.png) no-repeat left;
+  background-size: 44rpx 44rpx;
+  color: white;
+  font-size: 38rpx;
+  line-height: 100rpx;
+  margin-left: 60rpx;
+}
+.tip_money{
+  float: right;
+  color: white;
+  font-size: 28rpx;
+  margin-top: -60rpx;
+  margin-right: 30rpx;
+}
+.detail{
+  width: 84vw;
+  height: 140rpx;
+  background: white;
+  border-radius: 14rpx;
+  margin: 0 auto;
+  margin-top: -50rpx;
+  padding: 16rpx;
+}
+.detail text{
+  font-size: 32rpx;
+}
+.detail text:first-child{
+  margin-right: 70rpx;
+  background: url(http://pak686x2f.bkt.clouddn.com/people.png) no-repeat;
+  background-size: 40rpx 40rpx;
+  padding-left: 60rpx;
+}
+.detail view{
+  font-size: 32rpx;
+  margin-top: 25rpx;
+  padding-left: 60rpx;
+}
+.infomation{
+  width: 100vw;
+  padding: 30rpx 0 30rpx 30rpx;
+  background: white;
+  margin-top: 26rpx;
+  overflow: hidden;
+}
+.infomation image{
+  width: 170rpx;
+  height: 170rpx;
+  float: left;
+}
+.infomation text{
+  display: block;
+  margin-left: 220rpx;
+}
+.infomation text:nth-of-type(1){
+  font-size: 30rpx;
+}
+.infomation text:nth-of-type(2){
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  color: #666;
+}
+.infomation text:nth-of-type(3){
+  color: red;
+  margin-top: 30rpx;
+  font-size: 32rpx;
+}
+.juti{
+  background: white;
+  margin-top: 26rpx;
+  padding-bottom: 100rpx;
+}
+.juti view{
+  border-bottom: 2rpx solid #e9e9e9;
+  height: 80rpx;
+  padding: 10rpx 0;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  padding-left:30rpx;
+}

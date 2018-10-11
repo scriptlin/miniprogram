@@ -1,0 +1,96 @@
+.header-wrap{
+	border-bottom: 1px solid #eee;
+	height: 330rpx;
+  /* background: rgba(228,0,17,.5); */
+  background: #fff;
+  overflow: hidden;
+}
+.avatar{
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+	border: 1px solid #eee;
+	display: block;
+	margin: 50rpx auto 30rpx;
+}
+.nickName{
+  display: block;
+  text-align: center;
+  font-size: 40rpx;
+  color: #000;
+}
+.order-wrap{
+	color: #333;
+  margin-top: 30rpx;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+.order{
+	padding: 0 30rpx;
+	height: 80rpx;
+	overflow: hidden;
+	line-height: 80rpx;
+	vertical-align: bottom;
+	border-bottom: 1px solid #eee;
+}
+.order-text{
+	overflow: hidden;
+}
+.left-text{
+	float: left;
+  font-size: 30rpx;
+}
+.right-text{
+	float: right;
+	color: #A1A0A0;
+  padding-right: 40rpx;
+	font-size: 26rpx;
+  background: url(http://pak686x2f.bkt.clouddn.com/next-page.png) no-repeat 110rpx 25rpx;
+  background-size: 30rpx 30rpx;
+}
+.right-text i{
+	font-size: 35rpx;
+	position: relative;
+	 top: 2rpx; 
+}
+.order-wrap{
+	border-bottom: 1px solid #EEE;
+}
+.order-info-wrap{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30rpx 0;
+}
+.icon-img{
+	width: 50rpx;
+	height: 50rpx;
+  position: relative;
+  right: 5rpx;
+}
+.icon-text{
+	display: block;
+	font-size: 26rpx;
+	/* text-align: center; */
+	margin-top: 10rpx;
+	text-indent: -16rpx;
+}
+.personal-info {
+  margin-top: 30rpx;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-radius: 0;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 100rpx;
+  text-align: left;
+  background: #fff url(http://pak686x2f.bkt.clouddn.com/next-page.png) no-repeat 670rpx 25rpx;
+  background-size: 50rpx 50rpx;
+}
+.personal-info::after {
+  border: none;
+}
+.btn-active {
+  background: #e40011;
+  color: #fff;
+}

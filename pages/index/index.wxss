@@ -1,0 +1,85 @@
+@import "../../app.wxss";
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+page {
+  background: #F9F9F9;
+}
+.swiper {
+  height: 35vh;
+  width: 100vw;
+}
+.slider-img {
+  width: 100vw;
+  height: 35vh;
+}
+.company-list {
+  height: 100vh;
+}
+.single-comany {
+  margin-top: 30rpx;
+  background: #fff;
+  padding: 30rpx 0; 
+  border-bottom: 1rpx solid #eee;
+  border-top: 1rpx solid #eee;
+}
+.company-top {
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+.comany-name {
+  float: left;
+  font-size: 32rpx;
+}
+.touch-company {
+  color: #e40011;
+}
+.good-all {
+  float: right;
+  padding-top: 3rpx;
+  font-size: 26rpx;
+  color: #999;
+  padding-right: 40rpx;
+  background: url(http://pak686x2f.bkt.clouddn.com/next-page.png) no-repeat 110rpx 5rpx;
+  background-size: 30rpx 30rpx;
+}
+.taouch-all {
+  color: #e40011;
+}
+.good-list {
+  margin-top: 30rpx;
+  height: 300rpx;
+  white-space: nowrap;
+}
+.single-url {
+  margin-left: 30rpx;
+  display: inline-block;
+  text-align: center;
+}
+.single-url:last-child {
+  margin-right: 30rpx;
+}
+.good-image {
+  width: 300rpx;
+  height: 210rpx;
+  display: block;
+}
+.good-name {
+  display: block;
+  font-size: 30rpx;
+  width: 300rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10rpx;
+}
+.good-price {
+  font-size: 30rpx;
+  color: #e40011;
+}
+.price-icon {
+  font-size: 24rpx;
+}

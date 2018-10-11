@@ -1,0 +1,29 @@
+<view class='container'>
+  <view class='tip_header'>
+    <text class='state'>{{detail.status}}</text>
+    <text class='tip_money' wx:if="{{detail.status!=='已取消'}}">已付款：￥{{detail.price}}</text>
+  </view>
+  <view class='detail'>
+    <text>{{detail.name}}</text>
+    <text>{{detail.mobile}}</text>
+    <view>身份证号：{{detail.id_card}}</view>
+  </view>
+  <view>
+    <view class="infomation" bindtap='jump'>
+      <image mode='scaleToFill' src="{{detail.small_image}}"></image>
+      <text>{{detail.goods_name}}</text>
+      <text>活动日期:{{detail.start_time}}-{{detail.last_time}}</text>
+      <text>￥{{detail.pay_price}}</text>
+    </view>
+    <view class='juti'>
+      <view>订单编号：{{detail.order_number}}</view>
+      <view>支付方式：在线支付</view>
+      <view wx:if="{{detail.status!=='已取消'}}">预约时间：{{detail.subscribe_time}}</view>
+      <view>下单时间：{{detail.create_time}}</view>
+      <view>商品金额: ￥{{detail.price}}</view>
+      <view>商品数量: x {{detail.amount}}</view>
+      <view>实付金额: ￥{{detail.pay_price}}</view>
+    </view>
+  </view>
+</view>
+

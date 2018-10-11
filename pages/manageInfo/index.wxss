@@ -1,0 +1,51 @@
+.info-editor {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: right;
+  padding: 0 30rpx;
+}
+.info-list {
+  background: #fff;
+  border-top: 1px solid #eee;
+  margin-top: 30rpx;
+  padding: 30rpx;
+  position:relative;
+}
+.info-list:last-child{
+  margin-bottom: 200rpx;
+}
+.delete {
+  position: absolute;
+  top: 36%;
+}
+.user-name {
+  font-size: 32rpx;
+}
+.user-phone {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+.user-id {
+  display: block; 
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.add-info {
+  background: #e40011;
+  border-radius: 0;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 100rpx;
+}
+.add-info::after {
+  border: none;
+}
+.btn-active {
+  background: #b8000e;
+}

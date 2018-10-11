@@ -1,0 +1,28 @@
+<view class="not-notice">
+  <text class="not-header">预定说明</text>
+  <view class="dueThat">
+    <text class="not-title">预定时间:</text>
+    <text class="not-notice-content">{{notice.explain_reservation_time}};</text>
+  </view>
+  <view class="dueThat">
+    <text class="not-title">有效期:</text>
+    <text class="not-notice-content">{{notice.explain_reservation_validity}};</text>
+  </view>
+  <view class="dueThat">
+    <text class="not-title">预定限制:</text>
+    <text class="not-notice-content">最多可以预定{{notice.limite_amount}}张;</text>
+  </view>
+  <text class="not-header">入园须知</text>
+  <view class="not-into-way">
+    <text class="not-title">入园方式:</text>
+    <text class="not-notice-content" wx:for='{{notice.explain_reservation}}' wx:key="{{index}}">{{index+1}}.{{item}}</text>
+  </view>
+  <view class="not-into-time">
+    <text class="not-title">项目开放时间:</text>
+    <text class="not-notice-content" wx:for='{{notice.explain_open_time}}' wx:key="{{index}}">{{item}}</text>
+  </view>
+  <view class="not-refund">
+    <text class="not-header">退款规则</text>
+    <text class="not-notice-content">{{notice.explain_refund}}</text>
+  </view>
+</view>

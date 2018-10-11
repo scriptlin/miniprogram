@@ -1,0 +1,38 @@
+<view class="calendar" bindtouchstart='touchStart' bindtouchend="touchEnd" style="display: {{calendar ? 'block' : 'none'}};">
+  <view class="away-top" ></view>
+  <view class='time-top'>
+    <view class='left-btn' bindtap='backMonth'>{{'<'}}</view>
+    <view class='time'>
+      <text>{{year}}</text>年
+      <text>{{month}}</text>月
+    </view>
+    <view class='right-btn' bindtap='nextMonth'>></view>
+  </view>
+  <view>
+    <view class="weekName">
+      <view class="sunday">日</view>
+      <view class="monday">一</view>
+      <view class="tuesday">二</view>
+      <view class="wednesday">三</view>
+      <view class="thursday">四</view>
+      <view class="friday">五</view>
+      <view class="saturday">六</view>
+    </view>
+    <view class="week" wx:if="{{fontDate === 0}}">
+      <view wx:for="{{nbsp}}" wx:key="*this"></view>
+      <view wx:for="{{monthDaySize}}" wx:key='{{date}}' style="color:gainsboro;">{{index + 1}}</view>
+    </view>
+    <view class="week" wx:else>
+      <view wx:for="{{nbsp}}" wx:key="*this"></view>
+      <view wx:for="{{fontDate - 1}}" wx:key="*this" style="color:gainsboro;">
+        <text>{{index + 1}}</text>
+      </view> 
+      <view bindtap='chooseDate' wx:for="{{backDate - fontDate + 2}}" wx:key='{{date}}' data-date='{{fontDate + index}}' class="{{year===chooseDate.year && month===chooseDate.month && chooseDate.date===fontDate+index ? 'click' : 'default'}}">{{fontDate + index}}</view>
+      <view wx:for="{{monthDaySize - backDate - 1}}" wx:key="*this" style="color:gainsboro;">
+        <text>{{backDate + index + 2}}</text>
+      </view>  
+    </view>
+  </view>
+  <button class="btn-cancel" bindtap="cancel" hover-class='btn-active-cancel'>取消</button>
+  <button class="btn-confirm" bindtap="confirm" disabled="{{chooseDate.year === 0}}" hover-class='btn-active-confirm'>确认</button>
+</view>

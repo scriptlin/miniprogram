@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="wrap">
+    <icon class='successIcon' type='success' size='{{iconSize}}'></icon>
+    <view class='title'>支付成功，订单状态刷新中 <text class='loadIcon' wx:for="{{iconNum}}" wx:key="{{index}}">. </text></view>
+    <view class='timeContent'><text class="time">{{timeout}}</text> s后将自动跳转至该订单详细</view>
+    <text bindtap='toNow' class="{{navClass}}" >立即跳转</text>
+  </view>
+</view>

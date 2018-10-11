@@ -1,0 +1,35 @@
+<!-- 张士儒 -->
+<view class="container">
+  <view class="header-wrap">
+    <image class="avatar" src="{{personData.avatarUrl}}" mode="aspectFit"></image>
+    <text class="nickName">{{personData.nickName}}</text>
+  </view>
+  <view class="order-wrap">
+    <view class="order">
+      <view class="order-text">
+        <span class="left-text">我的订单</span>
+        <span class="right-text" bindtap="allOrder">全部订单</span>
+      </view>
+    </view>
+    <view class="order-info-wrap">
+      <view class="order-info-icon" bindtap="confirmOrder">
+        <image class="icon-img" src="../../images/person/tosend.png" mode="scaleToFill"></image>
+        <text class="icon-text">待出行</text>
+      </view>
+      <!-- <view class="order-info-icon" bindtap="needPay">
+        <image class="icon-img" src="../../images/person/topay.png" mode="scaleToFill"></image>
+        <text class="icon-text">待付款</text>
+      </view> -->
+      <view class="order-info-icon" bindtap="cancelOrder">
+        <image class="icon-img" src="../../images/person/cancel.png " mode="scaleToFill"></image>
+        <text class="icon-text">已取消</text>
+      </view>
+      <view class="order-info-icon" bindtap="finishOrder">
+        <image class="icon-img" src="../../images/person/sign.png" mode="scaleToFill"></image>
+        <text class="icon-text">已完成</text>
+      </view>
+    </view>
+  </view>
+  <button class="personal-info" hover-class='btn-active' bindtap='toInforms'>信息管理</button>
+  <contact-serve></contact-serve>
+</view>

@@ -1,0 +1,16 @@
+<view class="container">
+  <image src="{{goodDetail.large_image}}" alt="{{goodDetail.goods_name}}" class="goodShow"></image>
+  <view class="good-info">
+    <text class="good-name">{{goodDetail.goods_name}}</text>
+    <!-- <text class="good-view">{{goodDetail.view}}</text> -->
+    <text class="price"><text class="price-icon">￥</text>{{goodDetail.price}}</text>
+  </view>
+  <notice-park notice="{{goodDetail}}"></notice-park>
+    <view class="desc-image-wrap">
+      <image wx:for="{{goodDetail.desc_image}}" wx:key="{{index}}" src="{{item}}" class="desc-image" mode="widthFix"></image>
+    </view>
+  <view class="good-operation"> 
+    <text class="good-price"><text class="price-icon">￥</text>{{goodDetail.price}}</text>
+    <good-button bindtap = "order" buttonInfo = "立即预约"></good-button>
+  </view>
+</view>

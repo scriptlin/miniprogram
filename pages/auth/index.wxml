@@ -1,0 +1,4 @@
+<view class="auth" id="authPage" style="display: {{ifShow}}">
+	<text class="auth-text">为获取更好的服务，请允许授权</text>
+	<button open-type="getUserInfo" bindgetuserinfo="authUserInfo" type="primary" class="auth-btn">授权</button>
+</view>

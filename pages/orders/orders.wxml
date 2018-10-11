@@ -1,0 +1,27 @@
+<!-- 何林云-->
+<!--pages/orders/orders.wxml-->
+<wxs module="filter" src="ul.wxs"></wxs>
+<view class="container">
+  <view   catchtap='tap'  style='color:{{colorx}}'  class="headnav">
+  <text   bindtap='tap1' style='color:{{color1}}' class="hnav">全部</text>
+  <text   bindtap='tap2' style='color:{{color2}}' class="hnav">待出行</text>
+  <text   bindtap='tap3' style='color:{{color3}}' class="hnav">已取消</text>
+  <text   bindtap='tap4' style='color:{{color4}}'class="hnav">已完成</text>
+  </view>
+  <view class="nothing"style='display:{{nothing}}' >这里没有订单哦</view>
+  <view class="state">
+    <view  wx:for="{{array1}}" wx:key='keyone'  style='display:{{cunt1}};' class="order" >
+    <view class="actime"><span>预约时间： </span><p> {{item.subscribe_time}}  </p></view>
+    <text class="witepay">{{filter.state(item.status)}}</text>
+    <view    bindtap='witepay' id="{{item.id}}" >
+      <image  mode="scaleToFill" src="{{item.small_image}}"></image>
+      <strong>{{item.goods_name}}</strong>
+      <text class="amount">x  <text>{{item.amount}}</text> </text>
+    </view>
+    <text class="actul">共{{item.amount}}个商品 合计：<text class="money"><text style='font-size:24rpx;'>￥</text>{{filter.pay(item.pay_price)}}</text></text>     
+  
+  </view>
+
+</view>
+
+</view>

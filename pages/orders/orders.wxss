@@ -1,0 +1,103 @@
+/* pages/orders/orders.wxss */
+
+.container {
+  background-color: #eee;
+}
+.headnav {
+  height: 100rpx;
+  background-color: #fff;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.color {
+  color: red;
+}
+.nothing{
+  margin: 30rpx auto;
+  margin-left: 37%;
+  color: #666;
+  font-size: 28rpx;
+}
+.hnav {
+  float: left;
+  width: 24%;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+
+}
+
+.content {
+  font-size: 30rpx;
+  color: grey;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20rpx;
+  display: flex;
+}
+.contentn {
+  font-size: 30rpx;
+  color: grey;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20rpx;
+  display: flex;
+}
+.order {
+  font-size: 30rpx;
+  height: 370rpx;
+  position: relative;
+  background-color: white;
+  margin-top: 20rpx;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+.order strong {
+  display: block;
+  width: 350rpx;
+  height: 100rpx;
+  font-size: 26rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 260rpx;
+  color: #000;
+}
+.actime {
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.order image {
+  margin-top: 20rpx;
+  height: 180rpx;
+  width: 200rpx;
+  margin-left: 30rpx;
+}
+.amount {
+  position: absolute;
+  right: 40rpx;
+  top: 160rpx;
+}
+.witepay {
+  color: #e40011;
+  position: absolute;
+  top: 20rpx;
+  right: 40rpx;
+}
+.actul {
+  position: absolute;
+  clear: both;
+  top: 300rpx;
+  left: 30rpx;
+  font-size: 30rpx;
+}
+.money {
+  color: #e40011;
+  font-size: 32rpx;
+}
+.order-btn{
+  position: absolute;
+  top: 270rpx;
+right: 0rpx;
+}

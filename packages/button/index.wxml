@@ -1,0 +1,6 @@
+<view style='height:{{height}};'>
+  <button style='width:{{width}};line-height:{{height}};' class="buy-now" hover-class='touch-buNow' disabled = '{{disabled}}'>
+    {{buttonInfo}}
+  </button>
+  <slot></slot>
+</view>

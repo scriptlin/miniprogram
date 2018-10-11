@@ -1,0 +1,80 @@
+.desc-image {
+  width: 100%;
+}
+.desc-image-wrap {
+  padding-bottom: 130rpx;
+  font-size: 0;
+}
+.goodShow {
+  width: 100vw;
+  height: 35vh;
+}
+.good-info {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 30rpx;
+}
+.good-name {
+  display: inline-block;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.desc-image {
+  font-size: 0;
+}
+.good-view {
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #666;
+  float: right;
+  padding-left: 40rpx;
+  background: url(http://p86utdi99.bkt.clouddn.com/view.png) no-repeat 0 15rpx;
+  background-size:  30rpx 30rpx; 
+}
+.price {
+  display: block;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  color: #e40011;
+}
+.price-icon {
+  font-size: 24rpx;
+}
+.good-operation {
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+}
+.good-price  {
+  display: block;
+  float: left;
+  width: 375rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #e40011;
+  font-size: 30rpx;
+}
+.buy-now {
+  display: inline-block;
+  width: 375rpx;
+  height: 100rpx;
+  color: #fff;
+  border-radius: 0;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  background: #e40011;
+}
+.add-cart {
+  background: #e40011;
+}
+
+.touch-buNow {
+  background: #b8000e;
+}

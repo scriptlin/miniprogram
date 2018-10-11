@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/auth/index",
+    "pages/index/index",
+    "pages/loadStatus/index",
+    "pages/payNow/payNow",
+    "pages/calendar/index",
+    "pages/good/index",
+    "pages/addUserInfo/addUserInfo",
+    "pages/orderDetail/index",
+    "pages/manageInfo/index",
+    "pages/personal/index",
+    "pages/companyDesc/index",  
+    "pages/goodList/index",
+    "pages/orders/orders",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "北京水上运动团建",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#f9f9f9"
+  },
+  "tabBar": {
+    "color": "#222",
+    "selectedColor": "#e40011",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabs/home.png",
+      "selectedIconPath": "images/tabs/home-active.png"
+    },
+    {
+      "pagePath": "pages/personal/index",
+      "text": "我的",
+      "iconPath": "images/tabs/personal.png",
+      "selectedIconPath": "images/tabs/personal-active.png"
+    }]
+  },
+  "debug": true
+}
+

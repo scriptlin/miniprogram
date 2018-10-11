@@ -1,0 +1,15 @@
+<view class="contactServe">
+  <button class="contact-btn" bindtap='modalShow'>联系客服</button>
+  <view class="show-modal" wx:if="{{showModal}}" id="test">
+      <view class="modal-content">
+        <view class="modal-head">
+          <text class="modal-title">客服电话</text>
+          <text class="modal-desc">如果你有什么问题请咨询下面的电话</text>
+        </view>
+        <view class="modal-contet">
+          <text class="phone-num" bindtap='call' wx:for="{{phoneNumber}}" wx:key="{{index}}" data-phone="{{item}}">客服{{index + 1}}：{{item.mobile}}</text>
+        </view>
+        <button bindtap='modalCancel' class="modal-btn" hover-class='touch-cacel'>取消</button>
+      </view>
+  </view>
+</view>

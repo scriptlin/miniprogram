@@ -1,0 +1,23 @@
+var filter = {
+  state:function(value){
+    if (value == 1) {
+      return "已取消"
+    }
+    if (value == 3) {
+      return "待出行"
+    }
+    if (value == 4) {
+      return "已取消"
+    }
+    if (value == 5) {
+      return "已完成"
+    }
+  },
+  pay:function(value){
+    return value.toFixed(2);
+  },
+}
+module.exports = {
+  state: filter.state,
+  pay:filter.pay,
+}

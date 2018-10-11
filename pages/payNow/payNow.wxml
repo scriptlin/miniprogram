@@ -1,0 +1,46 @@
+<!-- 朱海涛 -->
+<view class='container'>
+      <view class='goods-imformation'>
+            <image class='goods-pic1' src='{{goodsImformation.small_image}}'></image>
+            <view class='text'>
+            <text class='text1'>{{goodsImformation.goods_name}}</text>
+            <text class='text2'>活动日期：{{start_time+"-"+last_time}}</text>
+            <text class='text3'> <text>￥</text>{{singlePrice}}</text>
+            </view>
+      </view>
+      <view class='quantityChoose'>
+            <view class='tip1'>选择人数</view>
+            <button class='btn1' disabled = '{{amount===1}}' bindtap='reduce'>-</button>
+            <view class='quantity'>{{amount}}</view>
+            <button class='btn2' disabled = '{{amount == goodsImformation.limite_amount}}' bindtap='add'>+</button>
+      </view>
+      <view class='date' bindtap='during' wx:if="{{goodDate == '2001-1-1'}}">
+            <text class="time-title">日期：</text>
+            <text class='d1'>{{goodDate === '2001-1-1' ? '' : goodDate}}</text>
+            <text class='tip2'>请选择出行日期</text>
+            <image class='next-page1' src='../../images/next-page.png'></image>
+      </view>
+      <view class='date' bindtap='during' wx:else>
+            <text class="time-title">日期：</text>
+            <text class='d1'>{{goodDate === '2001-1-1' ? '' : goodDate}}</text>
+            <image class='next-page1' src='../../images/next-page.png'></image>
+      </view>
+      
+            <view class='addUserInfo'  wx:if="{{informs.id == 0}}" bindtap='toChooseContact'>
+                  <text>联系人信息</text>
+                  <text class='tip3'  >您还没有选择联系人，请点击选择</text>
+            </view>
+            <view class='addUserInfo2'  wx:else bindtap='toChooseContact'>
+              <text class = "tip4">姓名：<text>{{informs.name}}</text> </text>
+              <text class='tip4' > 电话：<text>{{informs.mobile}}</text></text>
+            </view>
+      </view>
+      <view class='really-buy' >
+            <text>实付: <text id='totalPrice'><text class="price-icon">￥</text>{{totalPrice}}</text></text>
+      </view>
+      <view class='buy-now' bindtap='payNow' hover-class='btn-active'>
+            <text>立即购买</text>
+      </view>
+
+<calendar wx:if="{{loadCalendar}}" calendar="{{calendar}}" goodDate="{{goodDate}}" bindmyevent="dateChoose" effectDate="{{effectDate}}" dayBuyLast="{{dayBuyLast}}" id="{{id}}"></calendar>
+<contact-serve></contact-serve>

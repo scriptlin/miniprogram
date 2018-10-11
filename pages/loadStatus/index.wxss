@@ -1,0 +1,34 @@
+.wrap {
+  background: #fff;
+  margin-top: 30rpx;
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 30rpx 0;
+}
+.successIcon {
+  height: 100rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+}
+.title {
+  margin: 0 auto;
+  font-size: 30rpx;
+  width: 410rpx;
+  text-align: left;
+}
+.timeContent {
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.time {
+  color: #e40011;
+}
+.toNow {
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.activeNav {
+  font-size: 30rpx;
+  line-height: 80rpx;
+  color: #e40011;
+}

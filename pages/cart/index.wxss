@@ -1,0 +1,42 @@
+.order-top {
+  background: #fff;
+  /* border-bottom: 1px solid #eee; */
+  overflow: hidden;
+}
+.order-top button {
+  color: #f40030;
+  font-size: 30rpx;
+  width: 200rpx;
+  line-height: 100rpx;
+  background: rgba(0, 0, 0, 0);
+  float: right;
+}
+button::after {
+  border: none;
+}
+.order-item {
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  background: #fff;
+}
+.company-name {
+  line-height: 100rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+.company-name:after {
+  content: ">";
+  color: #999;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+}
+.order-info {
+  margin-top: 20rpx;
+}
+.circel {
+  border: 2px solid #ccc;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+}

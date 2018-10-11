@@ -1,0 +1,18 @@
+navigator {
+  background: #e40011;
+  border-radius: 0;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.button-active {
+  background: #b8000e;
+}
+.desc-wrap {
+  padding-bottom: 130rpx;
+  font-size: 0;
+}

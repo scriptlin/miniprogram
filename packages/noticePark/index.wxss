@@ -1,0 +1,46 @@
+.not-notice {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 0 30rpx 30rpx 30rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-family: PingFangSC-Regular, sans-serif; 
+}
+.not-header {
+  display: block;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  color: #000;
+  margin-bottom: 10rpx;
+}
+.not-header:before {
+  display: inline-block;
+  content: '|';
+  color: #e40011;
+  font-weight: bold;
+  margin-right: 10rpx;
+  border-radius: 4rpx;
+}
+.not-into-way {
+  margin-top: 15rpx;
+}
+.not-title {
+  font-size: 26rpx;
+  display: block;
+  font-weight: 400;
+  margin-left: 24rpx;
+  margin-top: 16rpx;
+}
+.not-notice-content {
+  display: block;
+  margin:12rpx 0 0 24rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: #666;
+}
+.not-into-time {
+  margin-top: 20rpx;
+}
+.not-refund .not-notice-content {
+  margin-top: 20rpx;
+}

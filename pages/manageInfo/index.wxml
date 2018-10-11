@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="info-editor">
+    <text wx:if="{{!isOrder}}" bindtap='editor'>{{editor ? '完成' : '编辑'}}</text>
+  </view>
+  <view class="info-wrap">
+    <view class="info-list" wx:for="{{informs}}" wx:key="{{item.id}}" bindtap='choose' data-index='{{index}}'  data-id='{{item.id}}' id='{{index}}'>
+      <view wx:if="{{editor}}">
+        <icon type='success' color='{{color[index]}}' class='delete'></icon>
+      </view>
+      <view class="info-content" style="margin-left:{{editor?'80rpx':'0'}}">
+        <text class="user-name">{{item.name}}</text>
+        <text class="user-phone">{{item.mobile}}</text>
+        <text class="user-id">{{item.id_card}}</text>
+      </view>
+    </view>
+  </view>
+  <good-button bindtap='toAddInfo' width="100vw" buttonInfo="{{buttonInfo}}" style='position:fixed;bottom:0' disabled='{{disabled}}'></good-button>
+</view>

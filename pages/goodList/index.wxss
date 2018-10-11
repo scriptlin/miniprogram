@@ -1,0 +1,45 @@
+.good-list {
+  background: #fff;
+  border-bottom:1rpx solid #eee;
+  border-top:1rpx solid #eee;
+  margin-top: 30rpx;
+  padding: 30rpx;
+  overflow: hidden;
+}
+.good-img {
+  float: left;
+  width: 200rpx;
+  height: 200rpx;
+}
+.goods_info {
+  float: left;
+  width: 460rpx;
+  margin-left: 30rpx;
+  padding-top: 10rpx;
+}
+.good-name {
+  font-size: 30rpx;
+}
+.good-time {
+  display: block;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 70rpx;
+}
+.good-price {
+  font-size: 30rpx;
+  color: #e40011;
+  margin-top: 10rpx;
+  display: block;
+}
+.price-icon {
+  font-size: 24rpx;
+}
+.good-view {
+  font-size: 22rpx;
+  color: #666;
+  background: url(http://p86utdi99.bkt.clouddn.com/view.png) no-repeat 0 5rpx;
+  background-size: 25rpx 25rpx;
+  padding-left: 30rpx;
+  margin-left: 50rpx;
+}

@@ -1,0 +1,36 @@
+/* pages/addUserInfo/addUserInfo.wxss */
+.info{
+  font-size: 30rpx;
+  background-color: white;
+  line-height: 90rpx;
+  border: 1rpx solo #eee;
+}
+.option{
+  width: 100%;
+  border-bottom: 1rpx solid #eee;
+}
+
+.input{
+  height: 90rpx;
+  background-color: white;
+  border-left: 1rpx solid #ccc;
+  padding-left: 40rpx;
+  font-size: 11pt;
+}
+.info view:first-child input{
+  margin-top: 30rpx;
+
+}
+button{
+  background-color: #e40011; 
+  width: 90%;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: white;
+  border-radius: 2rpx;
+}
+.btn-active{
+  background-color:#b8000e;
+}

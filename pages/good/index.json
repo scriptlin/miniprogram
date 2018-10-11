@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "notice-park": "/packages/noticePark/index",
+    "good-button": "/packages/button/index"
+  }
+}

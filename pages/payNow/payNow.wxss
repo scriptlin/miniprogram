@@ -1,0 +1,219 @@
+
+.addUserInfo{
+  background-image:url(http://pak686x2f.bkt.clouddn.com/next-page.png);
+  background-repeat: no-repeat;
+  background-position-x:690rpx;
+  background-position-y:20rpx;
+  background-size: 50rpx 50rpx;
+  height: 90rpx;
+  font-size: 30rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #eee;
+  position: absolute;
+  width: 100%;
+  top: 420rpx;
+  line-height: 90rpx;
+  border-top: 1rpx solid #eee;
+}
+.tip1{
+  height: 90rpx;
+  width: 25%;
+  background-color: white;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 30rpx;
+  float: left;
+}
+.goods-pic1{
+      height: 170rpx;
+      width: 170rpx;
+      margin-left: 30rpx;
+      float: left
+}
+.text{
+    width: 100%;
+    height: 200rpx;
+}
+.text1{
+    display: block;
+    width: 100%;
+    height: 70rpx;
+    font-size: 30rpx;
+    padding-left: 230rpx;
+}
+.text2{
+    display: block;
+    width: 100%;
+    height: 70rpx;
+    font-size: 26rpx;
+    color: #666666;
+    padding-left: 230rpx;
+    position: relative;
+    bottom: 20rpx;
+}
+.text3{
+    display: block;
+    width: 100%;
+    height: 70rpx;
+    padding-left:225rpx;
+    float: left;
+    position: relative;
+    bottom: 60rpx;
+    color: red;
+    font-size: 30rpx;
+}
+.text3 text{
+    font-size: 24rpx;
+}
+.btn1{
+      width: 25%;
+      background-color: white;
+      float: left;
+      height: 90rpx;
+      border-radius: 0rpx;
+}
+.quantityChoose{
+  height: 90rpx;
+}
+.quantity{
+      width: 25%;
+      float: left;
+      text-align: center;
+      line-height: 90rpx;
+      height: 90rpx;
+      background-color: white;
+      font-size: 36rpx;
+}
+button::after{
+      border-top: none;  
+      border-bottom: none;
+      border-radius: 0;
+}
+.btn2{ 
+      height: 90rpx;
+      width: 25%;
+      background-color: white;
+      float: right;
+}
+ .date{
+      border: 1px solid #eee;
+      border-bottom: none;
+      height: 70rpx;
+      width:100%;
+      line-height: 70rpx;
+      box-shadow: 1px #888888;
+      float: left;
+      padding: 10rpx;
+      font-size: 30rpx;
+      background-color: #FFFFFF;
+      padding-left: 30rpx;
+} 
+.time-title {
+  float: left;
+}
+.tip2{
+  position: relative;
+  height: 90rpx;
+  padding-left: 370rpx;
+  font-size: 26rpx;
+  color: #999999;
+  bottom:5rpx;
+}
+.tip3{
+  position: relative;
+  float: right;
+  padding-right: 75rpx;
+  height: 90rpx;
+  font-size: 26rpx;
+  color: #999999;
+}
+.tip4{
+  display: block
+}
+/*右对齐*/
+.tip4 text{
+  position: relative;
+  float: right;
+  width: 180rpx;
+  padding-right: 75rpx;
+  height: 55rpx;
+  font-size: 30rpx;
+  left: 0rpx;
+}
+.addUserInfo2{
+  background-image:url(http://pak686x2f.bkt.clouddn.com/next-page.png);
+  background-repeat: no-repeat;
+  background-position-x:690rpx;
+  background-position-y:40rpx;
+  background-size: 50rpx 50rpx;
+  height: 120rpx;
+  font-size: 30rpx;
+  padding-top: 10rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #eee;
+  position: absolute;
+  width: 100%;
+  top: 420rpx;
+  line-height: 60rpx;
+  border-top: 1rpx solid #eee;
+}
+.addUserInfo2 text{
+  padding-left: 30rpx;
+}
+.d1{
+  float: right;
+  position: absolute;
+  right: 70rpx;
+  width: 180rpx;
+}
+.next-page1{
+      height: 50rpx;
+      width: 50rpx;
+      float: right;
+      margin-right: 40rpx;
+      margin-top: 10rpx; 
+}
+.goods-imformation{
+      border: 1px solid #eee;
+      height: 210rpx;
+      width: 100%;
+      line-height: 70rpx;
+      float: left;
+      font-size: 30rpx;
+      background-color: white;
+      padding-top: 30rpx;
+}
+.really-buy{
+      height: 100rpx;
+      width: 50%;
+      background-color: #FFFFFF;
+      position: fixed;
+      bottom: 0;
+      font-size: 30rpx;
+      text-align: center;
+      line-height: 100rpx;
+}
+.buy-now{
+      height: 100rpx;
+      width: 50%;
+      background-color: #e40011;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      font-size: 30rpx;      
+      line-height: 100rpx;
+      text-align: center;
+      color: #FFFFFF;
+}
+.btn-active {
+  background: #b8000e;
+}
+.addUserInfo text{
+  padding-left: 30rpx;
+}
+#totalPrice{
+    color: #e40011;
+}
+.price-icon {
+  font-size: 24rpx;
+}

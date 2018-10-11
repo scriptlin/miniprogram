@@ -1,0 +1,28 @@
+<view class="container">
+  <scroll-view
+    scroll-y
+    bindscrolltolower="fetchGoodList"
+    style="height: 100vh;"
+  >
+    <view>
+      <navigator
+        class="good-list"
+        wx:for="{{goods}}"
+        wx:key="{{item.id}}"
+        url="/pages/good/index?id={{item.id}}&name={{item.goods_name}}"
+        hover-class="none"
+      >
+        <image
+          src="{{item.small_image}}"
+          class="good-img"
+        />
+        <view class="goods_info">
+          <text class="good-name">{{item.goods_name}}</text>
+          <text class="good-time">活动日期：{{item.start_time}}-{{item.last_time}}</text>
+          <text class="good-price"><text class="price-icon">￥</text>{{item.price}}</text>
+          <!-- <text class="good-view">{{item.view}}</text> -->
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="order">
+    <view class="order-top">
+      <button>编辑商品</button>
+    </view>
+    <view class="order-list">
+      <view
+        class="order-item"
+        wx:for="{{orders}}"
+        wx:key="{{item.orderId}}"
+      >
+        <navigator
+          class="company-name"
+          url="/pages/goodList/index?id={{item.companyId}}&name={{item.companyName}}"
+        >{{item.companyName}}</navigator>
+        <view class="order-info">
+          <view class="circel single-circel"></view>
+          <image src="{{item.imgUrl}}" class="order-img"/>
+          <view class="">
+            <text class="good-name">{{item.name}}</text>
+            <text class="good-time">{{item.time}}</text>
+            <text class="good-price">{{item.price}}</text>
+            <view>
+              <button class="reduce-good">-</button>
+              <text class="good-count">{{item.amount}}</text>
+              <button class="add-good">+</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="order-pay">
+      <view class="chose-all">
+        <view class="circel all-circel"></view>
+        <text>全选</text>
+      </view>
+      <text>总计: ￥{{total}}</text>
+      <button class="pay-all">去结算<text>({{goodCount}}件)</text></button>
+    </view>
+  </view>
+</view>

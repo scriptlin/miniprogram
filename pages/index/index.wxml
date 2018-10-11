@@ -1,0 +1,76 @@
+<!-- 首页 -->
+<view class="container">
+  <scroll-view
+    scroll-y
+    bindscrolltolower="fetchCompanyList"
+    class="company-list"
+    lower-threshold="100"
+  >
+  
+    <view class="g-slider">
+      <swiper
+        class="swiper"
+        indicator-dots="{{swiper.indecatotDots}}"
+        indicator-color="{{swiper.indicatorColor}}"
+        indicator-active-color="{{swiper.indicatorActiveColor}}"
+        autoplay="{{swiper.autoplay}}"
+        interval="{{swiper.interval}}"
+        duration="{{swiper.duration}}"
+        circular="{{swiper.circular}}"
+      >
+        <block
+          wx:for="{{slider}}"
+          wx:key="item.id"
+        >
+          <swiper-item>
+            <navigator
+              url="/pages/good/index?id={{item.id}}&name={{item.goods_name}}"
+            >
+              <image src="{{item.large_image}}" class="slider-img"/>
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="i-company">
+      <view
+        wx:for="{{companys}}"
+        wx:key="{{item.id}}"
+        class="single-comany"
+      >
+        <view class="company-top">
+          <navigator
+            url="/pages/companyDesc/index?name={{item.name}}&id={{item.id}}"
+            class="comany-name"
+            hover-class="touch-company"
+            >{{item.name}}
+          </navigator>
+          <navigator
+            url="/pages/goodList/index?id={{item.id}}&name={{item.name}}"
+            class="good-all"
+            hover-class="taouch-all"
+          >全部项目</navigator>
+        </view>
+        <scroll-view
+          scroll-x="true"
+          bindscrolltolower="fetchOneGoodsList"
+          data-id="{{item.id}}"
+          data-index="{{index}}"
+          class="good-list"
+        >
+          <navigator
+            class="single-url"
+            wx:for="{{goods[index].list}}"
+            wx:key="{{item.id}}"
+            url="/pages/good/index?id={{item.id}}&name={{item.goods_name}}"
+            hover-class="none"
+          >
+            <image src="{{item.small_image}}" class="good-image"/>
+            <text class="good-name">{{item.goods_name}}</text>
+            <text class="good-price"><text class="price-icon">￥</text>{{item.price}}</text>
+          </navigator>
+        </scroll-view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

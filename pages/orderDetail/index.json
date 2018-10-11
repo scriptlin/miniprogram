@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "notice-park": "/packages/noticePark/index"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "订单详细"
+}
